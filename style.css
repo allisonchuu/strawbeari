@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* adjust typography defaults */
+html {
+    font-family: 'Roboto Mono',
+        monospace;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+/* banner styling */
+.banner {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    bottom: -5px;
+    z-index: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    top: 20px;
+    left: 25px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 15%;
+    height: auto;
+}
+
+/* nav bar styling */
+
+.nav_bar {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: #F4F4F4;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+    letter-spacing: 0.065vw;
+    font-family: 'Roboto Mono',
+        monospace;
+    font-size: 1.25em;
+    color: #5F3D3F;
+
+    z-index: 0;
+}
+
+.nav_sec {
+    display: inline-block;
+    padding: 0px 2vw;
+
+    color: #5F3D3F;
+    ;
+
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
