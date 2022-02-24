@@ -1,1 +1,1 @@
-# strawbeari <img src="assets/strawberryicon.png?raw=true" width="10">
+# strawbeari <img src="assets/strawberryicon.png?raw=true" width="50px">
