@@ -267,13 +267,13 @@ video {
     align-items: center;
     justify-content: center;
     height: 30vh;
-    width: 22vw;
+    width: 15vw;
     border-radius: 30px;
 }
 
 .me img {
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 90%;
     border-radius: 25px;
 }
 
