@@ -287,14 +287,13 @@ video {
 /*-- start gif styling--*/
 
 .gifcontainer {
-    height: 20vw;
-    width: 30vw;
-    display: block;
+    height: 350px;
+    width: 550px;
+    vertical-align: center;
+    display: flex;
     position: fixed;
-    top: 55vh;
     bottom: 0;
-    left: 95%;
-    right: 0;
+    right: -460px;
     transition: transform 1.5s;
 }
 
@@ -309,14 +308,14 @@ video {
 }
 
 .strawberrygif {
-    left: 5px;
-    height: 10vh;
-    position: relative;
-    bottom: 60%;
-    z-index: 1;
+    left: 10px;
+    height: 55px;
+    position: absolute;
+    bottom: 43%;
+    z-index: 2;
 }
 
 .strawberrygif img {
-    width: 5vw;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
