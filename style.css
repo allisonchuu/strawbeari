@@ -266,14 +266,14 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
-    width: 15vw;
+    height: 300px;
+    width: 300px;
     border-radius: 30px;
 }
 
 .me img {
-    width: auto;
-    height: 90%;
+    width: 275px;
+    height: 275px;
     border-radius: 25px;
 }
 
@@ -282,4 +282,41 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*-- start gif styling--*/
+
+.gifcontainer {
+    height: 20vw;
+    width: 30vw;
+    display: block;
+    position: fixed;
+    top: 55vh;
+    bottom: 0;
+    left: 95%;
+    right: 0;
+    transition: transform 1.5s;
+}
+
+.gifcontainer img {
+    width: 100%;
+    height: auto;
+}
+
+.gifcontainer.show-panda {
+    transform: translate(-80%);
+    transition: transform 1.5s;
+}
+
+.strawberrygif {
+    left: 5px;
+    height: 10vh;
+    position: relative;
+    bottom: 60%;
+    z-index: 1;
+}
+
+.strawberrygif img {
+    width: 5vw;
+    height: auto;
 }
