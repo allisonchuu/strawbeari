@@ -3,11 +3,11 @@
 
 console.log("Hello, world!");
 
-
+var elem2 = document.querySelector('.gifcontainer');
 var x = true;
 
 function moveGif() {
-    var elem2 = document.querySelector('.gifcontainer');
+    
 
     if(x == true){
         elem2.classList.add('show-panda');
