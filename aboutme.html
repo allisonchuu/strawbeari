@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
@@ -12,6 +11,7 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+ 
 
     <title>Allison's Home Page</title>
 
@@ -23,39 +23,33 @@
   </head>
   <body>
 
+    
     <!-- this is the start of banner -->
     <div class="banner">
-            <picture>
+        <div class="logo">
+            <a href="index.html"><img src="assets/strawbearilogoL.png" alt="Lemon Logo"> </a>
+        </div>
+        <div class="logo2">
+            <a href="index.html"><img src="assets/lemonicon.png" alt="Lemon Icon"> </a>
+        </div>
+        <picture>
             <source
-                media="(min-width: 800px)"
+                media="(min-width: 1000px)"
                 srcset="assets/aboutmebanner.png">
             <img 
-                src="assets/banner2.png" 
+                src="assets/aboutmebanner2.png" 
                 alt="Banner Small"/>
         </picture>
-        
-        <div class="logo">
-            <a href="index.html">
-                <picture>
-                    <source 
-                        media="(min-width: 800px)"
-                        srcset="assets/strawbearilogo.png"
-                        style="height: 5vh; width: auto;">
-                    <img 
-                        src="assets/strawberryicon.png" 
-                        alt="Strawberry Icon"
-                        style="height: 6vh; width: auto;">
-                </picture>
-            </a>
-        </div>
     </div>
+
+    
 
     <!-- this is the start of nav bar -->
     <div class="nav_bar">
         <a href="index.html"><span class="nav_sec">home</span></a>
         <span class="dropdown">
             <a href="#"><span class="nav_sec" id="dropdown">about me &#x25BE;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" style="background-color: #FFFAE0;">
                 <a href="assets/sdresume_allisonchu.pdf"><div class="nav_sec">resume</div></a>
                 <a href="https://www.linkedin.com/in/ucrallisonchu/"><div class="nav_sec">linkedin</div></a>
                 <a href="https://github.com/allisonchuu"><div class="nav_sec">github</div></a>
@@ -64,13 +58,13 @@
 		</span>
         <span class="dropdown">
             <a href="projects.html"><span class="nav_sec" id="dropdown">projects &#x25BE;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" style="background-color: #FFFAE0;">
                 <a href="http://www.playperiodpal.tech"><div class="nav_sec">period pal</div></a>
             </div>
 		</span>
         <span class="dropdown">
             <a href="#me"><span class="nav_sec">cool stuff &#x25BE;</span></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" style="background-color: #FFFAE0;">
                 <a href="https://shared-patella-095.notion.site/allison-s-world-42b8360f9ad8483cbd6ef7e6e0d2678f"><div class="nav_sec">my notion</div></a>
             </div>
         </span>
@@ -109,7 +103,7 @@
         </div>
     </section>
         
-    <div class="footer">
+    <div class="footer" style="background-color: #FFFAE0;">
         <div class="top">strawbeari <span>&#9829;</span> 2022</div>
         <div class="bottom">
             <a href="mailto:allisonlychu@gmail.com" target="_blank"><img src="assets/icons/mail.png"></a>
