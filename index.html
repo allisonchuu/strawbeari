@@ -25,7 +25,15 @@
     
     <!-- this is the start of banner -->
     <div class="banner">
-        <img src="assets/banner.png" alt="Banner">
+            <picture>
+            <source
+                media="(min-width: 800px)"
+                srcset="assets/banner.png">
+            <img 
+                src="assets/banner2.png" 
+                alt="Banner Small"/>
+        </picture>
+        
         <div class="logo">
             <a href="index.html">
                 <picture>
@@ -43,7 +51,7 @@
     </div>
 
     <!-- this is the start of nav bar -->
-    <div class="nav_bar">
+    <nav class="nav_bar">
         <a href="index.html"><span class="nav_sec">home</span></a>
         <span class="dropdown">
             <a href="aboutme.html"><span class="nav_sec" id="dropdown">about me &#x25BE;</span></a>
@@ -64,10 +72,11 @@
             <a href="#me"><span class="nav_sec">cool stuff &#x25BE;</span></a>
             <div class="dropdown-content">
                 <a href="https://www.notion.so/allison-s-world-1-86155746055641fc9a6c8e2f2731b92d"><div class="nav_sec">my notion</div></a>
+                <a href="https://www.instagram.com/scruffypupco/"><div class="nav_sec">scruffy pup co</div></a>
             </div>
         </span>
         
-    </div>
+    </nav>
 
     <h1>Hi! This is the hub for everything allison related :)</h1>
     

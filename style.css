@@ -24,6 +24,9 @@ p {
     padding-left: 3em;
 }
 
+section {
+    display: block;
+}
 
 /* images and videos max out at full width */
 img,
@@ -264,6 +267,13 @@ video {
 
 .me {
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .me {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
 }
 
 @media only screen and (min-width: 1251px) {

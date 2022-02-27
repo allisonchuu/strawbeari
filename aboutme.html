@@ -22,14 +22,23 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
     <!-- this is the start of banner -->
     <div class="banner">
-        <img src="assets/aboutmebanner.png" alt="Banner">
+            <picture>
+            <source
+                media="(min-width: 800px)"
+                srcset="assets/aboutmebanner.png">
+            <img 
+                src="assets/banner2.png" 
+                alt="Banner Small"/>
+        </picture>
+        
         <div class="logo">
             <a href="index.html">
                 <picture>
                     <source 
-                        media="(min-width: 650px)"
+                        media="(min-width: 800px)"
                         srcset="assets/strawbearilogo.png"
                         style="height: 5vh; width: auto;">
                     <img 

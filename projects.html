@@ -24,17 +24,25 @@
   <body>
     <!-- this is the start of banner -->
     <div class="banner">
-        <img src="assets/projectsbanner.png" alt="Banner">
+            <picture>
+            <source
+                media="(min-width: 800px)"
+                srcset="assets/projectsbanner.png">
+            <img 
+                src="assets/projectsbanner2.png" 
+                alt="Banner Small"/>
+        </picture>
+        
         <div class="logo">
             <a href="index.html">
                 <picture>
                     <source 
-                        media="(min-width: 650px)"
-                        srcset="assets/strawbearilogo.png"
+                        media="(min-width: 800px)"
+                        srcset="assets/strawbearilogoB.png"
                         style="height: 5vh; width: auto;">
                     <img 
-                        src="assets/strawberryicon.png" 
-                        alt="Strawberry Icon"
+                        src="assets/blueberryicon.png" 
+                        alt="Blueberry Icon"
                         style="height: 6vh; width: auto;">
                 </picture>
             </a>
@@ -42,7 +50,7 @@
     </div>
 
     <!-- this is the start of nav bar -->
-    <div class="nav_bar">
+    <nav class="nav_bar">
         <a href="index.html"><span class="nav_sec">home</span></a>
         <span class="dropdown">
             <a href="aboutme.html"><span class="nav_sec" id="dropdown">about me &#x25BE;</span></a>
@@ -54,19 +62,20 @@
             </div>
 		</span>
         <span class="dropdown">
-            <a href="#"><span class="nav_sec" id="dropdown">projects &#x25BE;</span></a>
+            <a href="projects.html"><span class="nav_sec" id="dropdown">projects &#x25BE;</span></a>
             <div class="dropdown-content">
                 <a href="http://www.playperiodpal.tech"><div class="nav_sec">period pal</div></a>
             </div>
-		    </span>
+		</span>
         <span class="dropdown">
             <a href="#me"><span class="nav_sec">cool stuff &#x25BE;</span></a>
             <div class="dropdown-content">
-                <a href="https://shared-patella-095.notion.site/allison-s-world-42b8360f9ad8483cbd6ef7e6e0d2678f"><div class="nav_sec">my notion</div></a>
+                <a href="https://www.notion.so/allison-s-world-1-86155746055641fc9a6c8e2f2731b92d"><div class="nav_sec">my notion</div></a>
                 <a href="https://www.instagram.com/scruffypupco/"><div class="nav_sec">scruffy pup co</div></a>
             </div>
         </span>
-    </div>
+        
+    </nav>
 
     <h1>Hi! This is the hub for everything allison related :)</h1>
 
@@ -74,7 +83,7 @@
 
     </div>
     
-    <div class="footer">
+    <div class="footer" style="background-color: #D9F1FF;">
         <div class="top">strawbeari <span>&#9829;</span> 2022</div>
         <div class="bottom">
             <a href="mailto:allisonlychu@gmail.com" target="_blank"><img src="assets/icons/mail.png"></a>
