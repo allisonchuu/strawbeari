@@ -281,6 +281,7 @@ video {
 
 
     .navstrawbeari {
+        position: relative;
         padding-top: 125px;
         padding-right: 45px;
     }
