@@ -8,6 +8,7 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/strawberryicon.svg" color="#ffffff">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -42,7 +43,30 @@
         </picture>
     </div>
 
-    
+    <!-- this is the start of nav bar for mobile-->
+    <div id="hiddennavbar">
+            <a href="#" class="menubars" id="show-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <nav id="nav-menu">
+            <ul class="nav-menu-items">
+                <div id="navbar-toggle">
+                    <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
+                        <i class="fas fa-bars nav-icon"></i>
+                    </a>
+                </div>
+                <div class="nav-section">
+                    <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
+                    <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
+                    <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
+                    <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
+                </div>
+                <div class="navstrawbeari">
+                    <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
+                </div>
+            </ul>
+        </nav>
 
     <!-- this is the start of nav bar -->
     <div class="nav_bar">
