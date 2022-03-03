@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/strawberryicon.svg" color="#ffffff">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
- 
+
 
     <title>Allison's Home Page</title>
 
@@ -21,10 +26,11 @@
 
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
-  </head>
-  <body>
+</head>
 
-    
+<body>
+
+
     <!-- this is the start of banner -->
     <div class="banner">
         <div class="logo">
@@ -34,39 +40,35 @@
             <a href="index.html"><img src="assets/lemonicon.png" alt="Lemon Icon"> </a>
         </div>
         <picture>
-            <source
-                media="(min-width: 1000px)"
-                srcset="assets/aboutmebanner.png">
-            <img 
-                src="assets/aboutmebanner2.png" 
-                alt="Banner Small"/>
+            <source media="(min-width: 1000px)" srcset="assets/aboutmebanner.png">
+            <img src="assets/aboutmebanner2.png" alt="Banner Small" />
         </picture>
     </div>
 
     <!-- this is the start of nav bar for mobile-->
     <div id="hiddennavbar">
-            <a href="#" class="menubars" id="show-menu">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-        <nav id="nav-menu">
-            <ul class="nav-menu-items">
-                <div id="navbar-toggle">
-                    <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
-                        <i class="fas fa-bars nav-icon"></i>
-                    </a>
-                </div>
-                <div class="nav-section">
-                    <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
-                    <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
-                    <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
-                    <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
-                </div>
-                <div class="navstrawbeari">
-                    <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
-                </div>
-            </ul>
-        </nav>
+        <a href="#" class="menubars" id="show-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <nav id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
+                    <i class="fas fa-bars nav-icon"></i>
+                </a>
+            </div>
+            <div class="nav-section">
+                <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
+                <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
+                <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
+                <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
+            </div>
+            <div class="navstrawbeari">
+                <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
+            </div>
+        </ul>
+    </nav>
 
     <!-- this is the start of nav bar -->
     <div class="nav_bar">
@@ -74,25 +76,37 @@
         <span class="dropdown">
             <a href="#"><span class="nav_sec" id="dropdown">about me &#x25BE;</span></a>
             <div class="dropdown-content" style="background-color: #FFFAE0;">
-                <a href="assets/sdresume_allisonchu.pdf"><div class="nav_sec">resume</div></a>
-                <a href="https://www.linkedin.com/in/ucrallisonchu/"><div class="nav_sec">linkedin</div></a>
-                <a href="https://github.com/allisonchuu"><div class="nav_sec">github</div></a>
-                <a href=""><div class="nav_sec">related coursework</div></a>
+                <a href="assets/sdresume_allisonchu.pdf">
+                    <div class="nav_sec">resume</div>
+                </a>
+                <a href="https://www.linkedin.com/in/ucrallisonchu/">
+                    <div class="nav_sec">linkedin</div>
+                </a>
+                <a href="https://github.com/allisonchuu">
+                    <div class="nav_sec">github</div>
+                </a>
+                <a href="">
+                    <div class="nav_sec">related coursework</div>
+                </a>
             </div>
-		</span>
+        </span>
         <span class="dropdown">
             <a href="projects.html"><span class="nav_sec" id="dropdown">projects &#x25BE;</span></a>
             <div class="dropdown-content" style="background-color: #FFFAE0;">
-                <a href="http://www.playperiodpal.tech"><div class="nav_sec">period pal</div></a>
+                <a href="http://www.playperiodpal.tech">
+                    <div class="nav_sec">period pal</div>
+                </a>
             </div>
-		</span>
+        </span>
         <span class="dropdown">
             <a href="#me"><span class="nav_sec">cool stuff &#x25BE;</span></a>
             <div class="dropdown-content" style="background-color: #FFFAE0;">
-                <a href="https://shared-patella-095.notion.site/allison-s-world-42b8360f9ad8483cbd6ef7e6e0d2678f"><div class="nav_sec">my notion</div></a>
+                <a href="https://shared-patella-095.notion.site/allison-s-world-42b8360f9ad8483cbd6ef7e6e0d2678f">
+                    <div class="nav_sec">my notion</div>
+                </a>
             </div>
         </span>
-        
+
     </div>
 
     <br>
@@ -100,42 +114,45 @@
 
     <section class="body_container">
         <div class="container">
-            <div >
+            <div class="profilepic">
                 <img class="me" src="assets/profile.jpg" alt="Picture of Me">
             </div>
             <section class="introduction-section">
                 <h1>Introduction</h1>
-                    <p>I am a senior at the University of California, Riverside. </p>
-                    <p>Majoring in Neuroscience, Minoring in Computer Science.</p>
-                    <p>I love the internet, technology, and building beautiful things.</p>
+                <p>I am a senior at the University of California, Riverside. </p>
+                <p>Majoring in Neuroscience, Minoring in Computer Science.</p>
+                <p>I love the internet, technology, and building beautiful things.</p>
                 <h1>Where I'm From</h1>
-                    <p>I'm originally from Yucaipa, California. </p>
+                <p>I'm originally from Yucaipa, California. </p>
             </section>
         </div>
-    
+
         <div class="container">
             <section class="questions-section">
                 <h1>More About Me</h1>
                 <h2>What are your favorite hobbies?</h2>
-                    <p>My favorite hobby is creating websites and learning how to program. I also enjoy hanging out with my dog Morty.</p>
+                <p>My favorite hobby is creating websites and learning how to program. I also enjoy hanging out with my
+                    dog Morty.</p>
                 <h2>What's your dream job?</h2>
-                    <p>My dream job is to be a software developer</p>
+                <p>My dream job is to be a software developer</p>
                 <h2>Why do you want to be a web developer?</h2>
-                    <p>Because programming is awesome and programming for the internet is even more awesome.</p>
+                <p>Because programming is awesome and programming for the internet is even more awesome.</p>
                 <br>
             </section>
         </div>
     </section>
-        
+
     <div class="footer" style="background-color: #FFFAE0;">
         <div class="top">strawbeari <span>&#9829;</span> 2022</div>
         <div class="bottom">
             <a href="mailto:allisonlychu@gmail.com" target="_blank"><img src="assets/icons/mail.png"></a>
             <a href="https://github.com/allisonchuu" target="_blank"><img src="assets/icons/github.png"></a>
-            <a href="https://www.instagram.com/allison.chuu/?hl=en" target="_blank"><img src="assets/icons/instagram.png"></a>
-            <a href="https://www.linkedin.com/in/ucrallisonchu/" target="_blank"><img src="assets/icons/linkedin.png"></a>
+            <a href="https://www.instagram.com/allison.chuu/?hl=en" target="_blank"><img
+                    src="assets/icons/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/ucrallisonchu/" target="_blank"><img
+                    src="assets/icons/linkedin.png"></a>
         </div>
-    <div>
-  </body>
-</html>
+        <div>
+</body>
 
+</html>
