@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+@font-face {
+    font-family: 'silkscreen_expandednormal';
+    src: url('slkscre-webfont.eot');
+    src: url('slkscre-webfont.eot?#iefix') format('embedded-opentype'),
+        url('slkscre-webfont.woff2') format('woff2'),
+        url('slkscre-webfont.woff') format('woff'),
+        url('slkscre-webfont.ttf') format('truetype'),
+        url('slkscre-webfont.svg#silkscreen_expandednormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*--adjust typography defaults --*/
 html {
     font-family: 'Roboto Mono',
@@ -205,7 +218,7 @@ video {
         position: fixed;
         display: block;
         top: 3vh;
-        right: 3vh;
+        left: 3vh;
         height: 50px;
         width: auto;
     }
@@ -220,16 +233,16 @@ video {
 
     #navbar-toggle {
         position: relative;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-
+        display: block;
+        text-align: right;
+        right: 15px;
     }
 
     .menubarshidden {
         font-size: 2rem;
         color: #5F3D3F;
-
+        right: 0;
+        justify-content: right;
     }
 
     #nav-menu {
@@ -241,7 +254,7 @@ video {
         position: fixed;
         margin-left: 68%;
         top: 0;
-        right: -300px;
+        right: 100vw;
         transition: 850ms;
     }
 
@@ -266,7 +279,7 @@ video {
 
     #nav-menu.active {
         position: fixed;
-        right: 0;
+        right: 70vw;
         transition: 350ms;
     }
 
@@ -373,8 +386,15 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.beginning h1 {
+    font-family: 'silkscreen_expandednormal';
+    font-size: 3rem;
+    color: #5F3D3F;
 }
 
 /* about me page styling */
