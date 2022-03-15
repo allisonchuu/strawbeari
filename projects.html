@@ -25,73 +25,47 @@
   <body>
     <!-- this is the start of banner -->
     <div class="banner">
-        <div class="logo">
-            <a href="index.html"><img src="assets/strawbearilogoB.png" alt="Blueberry Logo"> </a>
-        </div>
+        
+        <picture>
+            <source media="(min-width: 1000px)" srcset="assets/projectsbanner.png">
+            <img src="assets/projectbanner2.png" alt="Banner Small" />
+        </picture>
+
+    </div>
+    
+    
+    
+    <!-- this is the start of nav bar-->
+    <div id="hiddennavbar">
+        <a href="#" class="menubars" id="show-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html">
+            <img src="assets/strawbearilogoB.png" class="logo" alt="Blueberry Logo"> 
+        </a>
         <div class="logo2">
             <a href="index.html"><img src="assets/blueberryicon.png" alt="Blueberry Icon"> </a>
         </div>
-        <picture>
-            <source
-                media="(min-width: 1000px)"
-                srcset="assets/projectsbanner.png">
-            <img 
-                src="assets/projectsbanner2.png" 
-                alt="Banner Small"/>
-        </picture>
     </div>
 
-    <!-- this is the start of nav bar for mobile-->
-    <div id="hiddennavbar">
-            <a href="#" class="menubars" id="show-menu">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-        <nav id="nav-menu">
-            <ul class="nav-menu-items">
-                <div id="navbar-toggle">
-                    <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
-                        <i class="fas fa-bars nav-icon"></i>
-                    </a>
-                </div>
-                <div class="nav-section">
-                    <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
-                    <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
-                    <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
-                    <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
-                </div>
-                <div class="navstrawbeari">
-                    <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
-                </div>
-            </ul>
-        </nav>
-
-    <!-- this is the start of nav bar -->
-    <nav class="nav_bar">
-        <a href="index.html"><span class="nav_sec">home</span></a>
-        <span class="dropdown">
-            <a href="aboutme.html"><span class="nav_sec" id="dropdown">about me &#x25BE;</span></a>
-            <div class="dropdown-content" style="background-color: #D9F1FF;">
-                <a href="assets/sdresume_allisonchu.pdf"><div class="nav_sec">resume</div></a>
-                <a href="https://www.linkedin.com/in/ucrallisonchu/"><div class="nav_sec">linkedin</div></a>
-                <a href="https://github.com/allisonchuu"><div class="nav_sec">github</div></a>
-                <a href=""><div class="nav_sec">related coursework</div></a>
+    <nav id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <img src="assets/strawbearilogoB.png" class="logo" alt="Blueberry Logo">
             </div>
-		</span>
-        <span class="dropdown">
-            <a href="projects.html"><span class="nav_sec" id="dropdown">projects &#x25BE;</span></a>
-            <div class="dropdown-content"style="background-color: #D9F1FF;">
-                <a href="http://www.playperiodpal.tech"><div class="nav_sec">period pal</div></a>
+            <div class="nav-section">
+                <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
+                <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
+                <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
+                <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
             </div>
-		</span>
-        <span class="dropdown">
-            <a href="#me"><span class="nav_sec">cool stuff &#x25BE;</span></a>
-            <div class="dropdown-content"style="background-color: #D9F1FF;">
-                <a href="https://www.notion.so/allison-s-world-1-86155746055641fc9a6c8e2f2731b92d"><div class="nav_sec">my notion</div></a>
-                <a href="https://www.instagram.com/scruffypupco/"><div class="nav_sec">scruffy pup co</div></a>
+            <div class="navstrawbeari">
+                <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
             </div>
-        </span>
-        
+        </ul>
     </nav>
 
     <h1>Hi! This is the hub for everything allison related :)</h1>

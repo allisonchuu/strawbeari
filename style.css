@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 @font-face {
-    font-family: 'silkscreen_expandednormal';
-    src: url('slkscre-webfont.eot');
-    src: url('slkscre-webfont.eot?#iefix') format('embedded-opentype'),
-        url('slkscre-webfont.woff2') format('woff2'),
-        url('slkscre-webfont.woff') format('woff'),
-        url('slkscre-webfont.ttf') format('truetype'),
-        url('slkscre-webfont.svg#silkscreen_expandednormal') format('svg');
+    font-family: 'Calibre_Light';
+    src: url('CalibreLight.eot');
+    src: url('CalibreLight.eot?#iefix') format('embedded-opentype'),
+        url('CalibreLight.woff2') format('woff2'),
+        url('CalibreLight.woff') format('woff'),
+        url('CalibreLight.ttf') format('truetype'),
+        url('CalibreLight.svg#Calibre_Light') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,9 +15,9 @@
 
 /*--adjust typography defaults --*/
 html {
-    font-family: 'Roboto Mono',
-        monospace;
+    font-family: 'Calibre_Light';
     background-color: white;
+    color: #5F3D3F;
 }
 
 body {
@@ -26,7 +26,12 @@ body {
 }
 
 h1 {
+    font-size: 3rem;
     text-align: center;
+}
+
+p {
+    font-size: 2rem;
 }
 
 a {
@@ -62,12 +67,12 @@ video {
 }
 
 .logo {
-    display: block;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 300px;
-    height: 75px;
+    position: relative;
+    display: inline;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: auto;
 }
 
 .logo2 {
@@ -80,131 +85,114 @@ video {
     }
 
     .logo2 {
-        display: block;
-        position: absolute;
-        margin-top: 30px;
-        margin-left: 30px;
-        width: 100px;
-        height: 100px;
+        display: inline-block;
+        position: relative;
+        width: 70px;
+        height: auto;
     }
 }
 
 /*--end banner styling--*/
 
-/*--begin horizontal nav bar styling--*/
-
-.nav_bar {
-    display: block;
-    position: -webkit-sticky;
+#navbar-toggle {
     position: relative;
-    top: 0;
-
-    background-color: #F4F4F4;
-
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-
-    text-align: center;
-    letter-spacing: 0.065vw;
-    font-family: 'Roboto Mono',
-        monospace;
-    font-size: 1.25em;
-    color: #5F3D3F;
-
-    z-index: 0;
+    display: inline;
+    text-align: left;
 }
-
-.nav_sec {
-    display: inline-block;
-    padding: 0px 2vw;
-
-    color: #5F3D3F;
-
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-.nav_sec:hover {
-    color: #bbb0b1;
-
-    -webkit-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out;
-}
-
-#dropdown:hover {
-    -webkit-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    -webkit-appearance: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-
-    background-color: #F4F4F4;
-    opacity: 0.95;
-
-    width: 100%;
-    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 2vw 2vw;
-}
-
-.dropdown-content a {
-    padding: 2vh 1vw;
-
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content .nav_sec {
-    padding: 0;
-    margin: 0;
-
-    width: 100%;
-}
-
-@media only screen and (max-width: 1024px) {
-    .nav_bar {
-        overflow-y: visible;
-
-        font-size: 1.2em;
-    }
-
-    .nav_sec {
-        padding: 5px 2vw;
-    }
-
-    .dropdown-content .nav_sec {
-        padding: 0;
-    }
-}
-
-/*--end horizontal nav bar styling--*/
 
 /*--begin side nav bar styling--*/
 
 #nav-menu {
-    display: none;
+    background-color: #F4F4F4;
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    transition: 350ms;
 }
 
 .menubars {
-    display: none;
+
+    display: inline-block;
+    font-size: 3rem;
+    color: #5F3D3F;
 
 }
 
+#hiddennavbar {
+    position: fixed;
+    display: inline-block;
+    top: 3vh;
+    left: 3vh;
+    height: auto;
+    width: auto;
+}
+
+#nav-menu.active {
+    position: fixed;
+    left: 0;
+    transition: 350ms;
+}
+
+#navbar-toggle {
+    position: relative;
+    display: inline-block;
+    top: 23px;
+    left: 0;
+    text-align: left;
+}
+
+.menubarshidden {
+    display: inline-block;
+    font-size: 3rem;
+    color: #5F3D3F;
+
+}
+
+.nav-menu-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 350px;
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+    padding-right: 50px;
+
+    color: #5F3D3F;
+}
+
+.nav-section a {
+    text-decoration: none;
+    color: #5F3D3F;
+    font-size: 2rem;
+    padding-top: 30px;
+    margin-left: 0px;
+}
+
+.navstrawbeari {
+    display: inline-block;
+    position: absolute;
+    left: 70px;
+    width: 250px;
+    bottom: 50px;
+}
+
+.nav-icon {
+    padding-right: 1rem;
+    color: #5F3D3F;
+}
+
+
 @media only screen and (max-width: 1000px) {
-    .nav_bar {
-        display: none;
-    }
 
     .nav-menu-items {
         position: relative;
@@ -216,26 +204,24 @@ video {
 
     #hiddennavbar {
         position: fixed;
-        display: block;
-        top: 3vh;
-        left: 3vh;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        top: 30px;
+        left: 30px;
         height: 50px;
-        width: auto;
+        width: 200px;
     }
 
     .menubars {
-        display: block;
-        margin-top: 0;
         font-size: 2rem;
-        color: #5F3D3F;
-
     }
 
     #navbar-toggle {
         position: relative;
         display: block;
         text-align: right;
-        right: 15px;
+
     }
 
     .menubarshidden {
@@ -255,7 +241,7 @@ video {
         margin-left: 68%;
         top: 0;
         right: 100vw;
-        transition: 850ms;
+        /*transition: 850ms;*/
     }
 
 
@@ -373,7 +359,7 @@ video {
 
 .footer a:hover {
     animation-name: o-pulse-ity;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
@@ -389,12 +375,6 @@ video {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
-}
-
-.beginning h1 {
-    font-family: 'silkscreen_expandednormal';
-    font-size: 3rem;
-    color: #5F3D3F;
 }
 
 /* about me page styling */
