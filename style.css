@@ -22,7 +22,10 @@ html {
 
 body {
     margin: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -40,6 +43,15 @@ a {
 
 section {
     display: block;
+}
+
+.divider {
+    background-color: #EDEDED;
+    height: 13px;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 /*--images and videos max out at full width--*/
@@ -75,27 +87,10 @@ video {
     width: auto;
 }
 
-.logo2 {
-    display: none;
-}
-
-@media only screen and (max-width: 1000px) {
-    .logo {
-        display: none;
-    }
-
-    .logo2 {
-        display: inline-block;
-        position: relative;
-        width: 70px;
-        height: auto;
-    }
-}
-
 /*--end banner styling--*/
 
 #navbar-toggle {
-    position: relative;
+    position: fixed;
     display: inline;
     text-align: left;
 }
@@ -125,8 +120,8 @@ video {
 #hiddennavbar {
     position: fixed;
     display: inline-block;
-    top: 3vh;
-    left: 3vh;
+    top: 30px;
+    left: 30px;
     height: auto;
     width: auto;
 }
@@ -181,8 +176,7 @@ video {
 .navstrawbeari {
     display: inline-block;
     position: absolute;
-    left: 70px;
-    width: 250px;
+    width: 200px;
     bottom: 50px;
 }
 
@@ -195,37 +189,18 @@ video {
 @media only screen and (max-width: 1000px) {
 
     .nav-menu-items {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        margin-top: 3vh;
-    }
-
-    #hiddennavbar {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        top: 30px;
-        left: 30px;
-        height: 50px;
-        width: 200px;
+        width: 250px;
     }
 
     .menubars {
-        font-size: 2rem;
-    }
-
-    #navbar-toggle {
         position: relative;
-        display: block;
-        text-align: right;
-
+        display: inline-block;
+        left: 0;
+        text-align: left;
     }
+
 
     .menubarshidden {
-        font-size: 2rem;
         color: #5F3D3F;
         right: 0;
         justify-content: right;
@@ -238,7 +213,6 @@ video {
         display: flex;
         justify-content: center;
         position: fixed;
-        margin-left: 68%;
         top: 0;
         right: 100vw;
         /*transition: 850ms;*/
@@ -255,13 +229,6 @@ video {
         color: #5F3D3F;
     }
 
-    .nav-section a {
-        text-decoration: none;
-        color: #5F3D3F;
-        font-size: 1.5rem;
-        padding-top: 30px;
-        margin-left: 0px;
-    }
 
     #nav-menu.active {
         position: fixed;
@@ -298,7 +265,7 @@ video {
     background-color: #FFE8F5;
     padding-top: 1vh;
     padding-bottom: 1vh;
-
+    width: 100%;
     text-align: center;
 
     font-size: 1.25em;
@@ -375,6 +342,20 @@ video {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.hackathons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hackathons img {
+    margin-left: 190px;
+    margin-bottom: 30px;
 }
 
 /* about me page styling */
