@@ -173,6 +173,10 @@ video {
     margin-left: 0px;
 }
 
+.nav-section a:hover {
+    color: #bbb0b1;
+}
+
 .navstrawbeari {
     display: inline-block;
     position: absolute;
@@ -287,34 +291,6 @@ video {
     display: block;
 }
 
-@-webkit-keyframes o-pulse-ity {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes o-pulse-ity {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .footer img {
     vertical-align: center;
 
@@ -322,12 +298,6 @@ video {
 
     min-height: 30px;
     max-height: 30px;
-}
-
-.footer a:hover {
-    animation-name: o-pulse-ity;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
 
 /* end footer styling */
