@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Calibre_Light';
-    src: url('CalibreLight.eot');
-    src: url('CalibreLight.eot?#iefix') format('embedded-opentype'),
-        url('CalibreLight.woff2') format('woff2'),
-        url('CalibreLight.woff') format('woff'),
-        url('CalibreLight.ttf') format('truetype'),
-        url('CalibreLight.svg#Calibre_Light') format('svg');
+    src: url('fonts/CalibreLight.eot');
+    src: url('fonts/CalibreLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CalibreLight.woff2') format('woff2'),
+        url('fonts/CalibreLight.woff') format('woff'),
+        url('fonts/CalibreLight.ttf') format('truetype'),
+        url('fonts/CalibreLight.svg#Calibre_Light') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -295,7 +295,7 @@ video {
 .footer {
     display: block;
 
-    background-color: #FDDCE9;
+    background-color: #FFE8F5;
     padding-top: 1vh;
     padding-bottom: 1vh;
 
