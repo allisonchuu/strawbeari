@@ -87,6 +87,25 @@ video {
     width: auto;
 }
 
+.mobileLogo {
+    display: none
+}
+
+@media only screen and (max-width:800px) {
+    .logo {
+        display: none
+    }
+
+    .mobileLogo {
+        position: relative;
+        display: inline;
+        top: 10px;
+        left: 10px;
+        height: 50px;
+        width: auto;
+    }
+}
+
 /*--end banner styling--*/
 
 #navbar-toggle {
@@ -118,7 +137,7 @@ video {
 }
 
 #hiddennavbar {
-    position: fixed;
+    position: absolute;
     display: inline-block;
     top: 30px;
     left: 30px;
@@ -322,16 +341,14 @@ video {
 }
 
 .hackathons img {
-    margin-left: 190px;
-    margin-bottom: 30px;
+    margin-left: 170px;
+}
+
+#welcomeStrawbeari {
+    width: 300px;
 }
 
 /* about me page styling */
-
-.profilepic {
-    height: 100%;
-    width: auto;
-}
 
 .body_container {
     display: flex;
@@ -339,22 +356,45 @@ video {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
 .container {
+    background-color: #FDFAFA;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding-top: 10px;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 50px;
+    width: 50%;
+    box-shadow: -10px 10px 20px #A6A6A6;
+    opacity: 0;
+    animation: textFadeIn 0.5s linear forwards;
+    animation-delay: 0.3s;
+
 }
 
-.me {
+@keyframes textFadeIn {
+    0% {
+        opacity: 0.1;
+        transform: translatey(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#me {
+    position: relative;
     border-radius: 30px;
-    height: 400px;
-    width: 400px;
+    margin-right: -50px;
+    height: auto;
+    width: 80%;
+    box-shadow: -10px 10px 10px #A6A6A6;
 }
 
 .introduction-section {
@@ -363,12 +403,34 @@ video {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-left: 5%;
+}
+
+.introduction-section p {
+    margin-top: -20px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info {
+    background-color: #EDEDED;
+    color: #5F3D3F;
+    border: 0px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    box-shadow: -5px 5px 10px #A6A6A6;
 }
 
 @media only screen and (max-width: 1000px) {
     .container {
-        padding: 0 5%;
+        padding: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -376,14 +438,14 @@ video {
         text-align: center;
     }
 
-}
+    .introduction-section {
+        padding-right: 0px;
+    }
 
-.questions-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    #welcomeStrawbeari {
+        width: 200px;
+    }
+
 }
 
 /*--end about me page styling--*/
