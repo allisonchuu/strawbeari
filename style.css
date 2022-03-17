@@ -442,6 +442,10 @@ video {
         padding-right: 0px;
     }
 
+    .introduction-section p {
+        font-size: 1.5rem;
+    }
+
     #welcomeStrawbeari {
         width: 200px;
     }
