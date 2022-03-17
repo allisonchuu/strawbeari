@@ -198,8 +198,6 @@ video {
 
     .menubars {
         position: relative;
-        display: inline-block;
-        left: 0;
         text-align: left;
     }
 
@@ -273,11 +271,11 @@ video {
     text-align: center;
 
     font-size: 1.25em;
-    color: #5F3D3F
+    color: #5F3D3F;
 }
 
 .footer span {
-    color: white;
+    color: #5F3D3F;
 }
 
 .top {
@@ -340,6 +338,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 10px;
 }
 
@@ -348,6 +347,7 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 10px;
 }
 
@@ -362,6 +362,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-left: 5%;
 }
 
@@ -372,6 +373,7 @@ video {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
 }
@@ -381,6 +383,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 /*--end about me page styling--*/
