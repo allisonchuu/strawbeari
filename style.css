@@ -436,14 +436,27 @@ video {
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 70%;
+    }
+
+    #me {
+        margin-right: 0;
     }
 
     .introduction-section {
-        padding-right: 0px;
+        padding: 20px;
     }
 
     .introduction-section p {
         font-size: 1.5rem;
+    }
+
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #welcomeStrawbeari {
