@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
-@font-face {
-    font-family: 'Calibre_Light';
-    src: url('fonts/CalibreLight.eot');
-    src: url('fonts/CalibreLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CalibreLight.woff2') format('woff2'),
-        url('fonts/CalibreLight.woff') format('woff'),
-        url('fonts/CalibreLight.ttf') format('truetype'),
-        url('fonts/CalibreLight.svg#Calibre_Light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html {
+    font-family: 'Inter', sans-serif;
+}
 
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
 /*--adjust typography defaults --*/
 html {
-    font-family: 'Calibre_Light';
-    background-color: white;
+    background-color: #FFEFF8;
     color: #5F3D3F;
 }
 
@@ -166,36 +163,6 @@ video {
 
 }
 
-.nav-menu-items {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: 350px;
-}
-
-.nav-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 10px;
-    padding-right: 50px;
-
-    color: #5F3D3F;
-}
-
-.nav-section a {
-    text-decoration: none;
-    color: #5F3D3F;
-    font-size: 2rem;
-    padding-top: 30px;
-    margin-left: 0px;
-}
-
-.nav-section a:hover {
-    color: #bbb0b1;
-}
-
 .navstrawbeari {
     display: inline-block;
     position: absolute;
@@ -331,22 +298,112 @@ video {
     padding-right: 15%;
 }
 
-.hackathons {
+#homepage {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#homepage-header {
+    height: 100px;
+    position: relative;
+}
+
+#homepage-icon {
+    height: 60px;
+    padding: 20px;
+    position: absolute;
+    width: 80px;
+}
+
+#homepage-header-navigation {
+    position: absolute;
+    right: 0;
+}
+
+.nav-menu-items {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+    flex-direction: row;
+    align-items: left;
+    width: 350px;
 }
 
-.hackathons img {
-    margin-left: 170px;
+.nav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 25px 50px 0;
+    color: #5F3D3F;
 }
 
-#welcomeStrawbeari {
-    width: 300px;
+.nav-section a {
+    text-decoration: none;
+    color: #5F3D3F;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 15px 30px;
 }
+
+.nav-section a:hover {
+    color: #bbb0b1;
+}
+
+#homepage-intro {
+    padding: 150px 200px 100px;
+    font-size: 40px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+#homepage-intro-name {
+    font-weight: 500;
+}
+
+#homepage-intro-next-line {
+    font-size: 35px;
+}
+
+#home-page-clouds-and-strawbeari {
+    animation: LeftRight 15s linear infinite;
+    height: auto;
+    top: 0;
+    position: absolute;
+    width: 175%;
+    max-width: 5000px;
+}
+
+#home-page-clouds-and-strawbeari-wrapper {
+    position: relative;
+    width: auto;
+}
+
+@keyframes LeftRight {
+
+    0%,
+    100% {
+        left: -800px;
+    }
+
+    50% {
+        left: -600px;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    @keyframes LeftRight {
+
+        0%,
+        100% {
+            left: -500px;
+        }
+
+        50% {
+            left: -300px;
+        }
+    }
+}
+
 
 /* about me page styling */
 

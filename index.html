@@ -30,70 +30,29 @@
 
 <body>
 
-    <!-- this is the start of banner -->
-
-    <div class="banner">
-        
-        <picture>
-            <source media="(min-width: 1000px)" srcset="assets/banners/banner.png">
-            <img src="assets/banners/banner2.png" alt="Banner Small" />
-        </picture>
-
-    </div>
-    
-    <!-- this is the start of nav bar-->
-    <div id="hiddennavbar">
-        <a href="#" class="menubars" onclick="showMenu()">
-            <i class="fas fa-bars"></i>
-        </a>
-        <a href="index.html">
-            <img src="assets/logos/strawbearilogo.png" class="logo" alt="Strawberry Logo"> 
-            <img src="assets/logos/strawberryicon.png" class="mobileLogo" alt="Strawberry Icon">  
-        </a>
-    </div>
-
     <!-- this is the start of page content -->
 
-    <div class="container">
-        <div class="introduction-section">
-            <img id="welcomeStrawbeari" src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
-            <h1>welcome!</h1>
-        <p>This is the hub for all things Allison related! My portfolio is based around my own personal character Strawbeari the Panda. I wanted to create a website that represented who I am and what I enjoy. I hope you like it!</p>
+    <div id="homepage">
+        <div id="homepage-header">
+            <div class="homepage-header-icon-wrapper">
+                <img id="homepage-icon" src="assets/logos/strawberryicon.png" alt="Strawberry icon">
+            </div>
+            <div id="homepage-header-navigation" class="nav-section">
+                <a href="index.html">home</a>
+                <a href="aboutme.html">about me</a>
+                <a href="projects.html">projects</a>
+                <a href="#">cool stuff</a>
+            </div>
         </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="container">
-        <div class="hackathons">
-            <h1>hackathons attending:</h1>
-            <h1>hackathons attended:</h1>
-            <img src="https://idemoed.vercel.app/api/wall?username=allisonchuu"/>
+        <div id="homepage-intro">
+            hi, my name is <span id="homepage-intro-name">allison.</span> <br>
+            <span id="homepage-intro-next-line">this is my website :)</span>
+        </div>
+        <div id="home-page-clouds-and-strawbeari-wrapper">
+            <img id="home-page-clouds-and-strawbeari" src="assets/home-page-clouds-and-strawbeari.png" alt="Strawbeari on clouds">
         </div>
     </div>
     
-
-    <div class="divider"></div>
-
-    <nav id="nav-menu">
-        <ul class="nav-menu-items">
-            <div id="navbar-toggle">
-                <a href="#" class="menubarshidden" onclick="hideMenu()">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-            <div class="nav-section">
-                <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
-                <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
-                <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
-                <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
-            </div>
-            <div class="navstrawbeari">
-                <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
-            </div>
-        </ul>
-    </nav>
-
     <div class="gifcontainer">
         <img src="assets/funstrawbeari.gif" alt="Strawbeari in Forest">
         <div class="strawberrygif">
@@ -101,19 +60,6 @@
         </div>
     </div>
 
-    <!-- this is the start of footer -->
-
-    <div class="footer">
-        <div class="top">strawbeari <span>&#9829;</span> 2022</div>
-        <div class="bottom">
-            <a href="mailto:allisonlychu@gmail.com" target="_blank"><img src="assets/icons/mail.png"></a>
-            <a href="https://github.com/allisonchuu" target="_blank"><img src="assets/icons/github.png"></a>
-            <a href="https://www.instagram.com/allison.chuu/?hl=en" target="_blank"><img
-                    src="assets/icons/instagram.png"></a>
-            <a href="https://www.linkedin.com/in/ucrallisonchu/" target="_blank"><img
-                    src="assets/icons/linkedin.png"></a>
-        </div>
-    <div>
 </body>
 
 </html>
