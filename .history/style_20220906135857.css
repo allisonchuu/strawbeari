@@ -366,8 +366,8 @@ video {
 
 #home-page-clouds-and-strawbeari {
     background: url("assets/home-page-clouds-and-strawbeari.png") repeat-x;
-    animation: slide 120s linear infinite;
-    background-size: 3000px;
+    animation: slide 15s linear infinite;
+    background-size: 1000px;
     height: 500px;
     width: 14000px;
 }
@@ -382,7 +382,7 @@ video {
       transform: translate(0);
     }
     100% {
-      transform: translate(-3000px); /* The image width */
+      transform: translate(-1000px); /* The image width */
     }
   }
 
@@ -404,10 +404,27 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 50px;
     margin: 50px;
     border-radius: 50px;
-    width: 85%;
+    width: 50%;
+    box-shadow: -10px 10px 20px #A6A6A6;
     opacity: 0;
+    animation: textFadeIn 0.5s linear forwards;
+    animation-delay: 0.3s;
+
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0.1;
+        transform: translatey(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 #me {

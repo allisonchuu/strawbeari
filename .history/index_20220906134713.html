@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -32,7 +32,7 @@
 
     <!-- this is the start of page content -->
 
-    <section class="about-me-page">
+    <div id="homepage">
         <div id="homepage-header">
             <div class="homepage-header-icon-wrapper">
                 <img id="homepage-icon" src="assets/logos/strawberryicon.png" alt="Strawberry icon">
@@ -44,24 +44,21 @@
                 <a href="#">cool stuff</a>
             </div>
         </div>
-        <div class="container">
-            <div class="profilepic">
-                <img id="me" src="assets/profile.jpg" alt="Picture of Me">
-            </div>
-            <section class="introduction-section">
-                <h1>about me</h1>
-                <p>I am a senior at the University of California, Riverside.
-                    Majoring in Neuroscience, Minoring in Computer Science.
-                    I love the internet, technology, and web development. I'm an animal lover for sure!</p>
-                    <div class="infoContainer">
-                        <a class="info" href="assets/01AllisonChu.pdf">Resume</a>
-                        <a class="info" href="https://www.linkedin.com/in/ucrallisonchu/">Linkedin</a>
-                        <a class="info" href="https://github.com/allisonchuu">GitHub</a>
-                        <a class="info" href="https://devpost.com/allisonchuu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">DevPost</a>
-                    </div>
-            </section>
+        <div id="homepage-intro">
+            hi, my name is <span id="homepage-intro-name">allison.</span> <br>
+            <span id="homepage-intro-next-line">this is my website :)</span>
         </div>
-    </section>
+        <div id="home-page-clouds-and-strawbeari-wrapper">
+            <img id="home-page-clouds-and-strawbeari" src="assets/home-page-clouds-and-strawbeari.png" alt="Strawbeari on clouds">
+        </div>
+    </div>
+    
+    <div class="gifcontainer">
+        <img src="assets/funstrawbeari.gif" alt="Strawbeari in Forest">
+        <div class="strawberrygif">
+            <img src="assets/strawberry.gif" alt="Strawberry Gif" id="strawberrygif" onClick="moveGif();">
+        </div>
+    </div>
 
 </body>
 

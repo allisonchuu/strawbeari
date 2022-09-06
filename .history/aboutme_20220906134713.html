@@ -30,20 +30,20 @@
 
 <body>
 
+
+    <!-- this is the start of banner -->
+    <div class="banner">
+        
+        <picture>
+            <source media="(min-width: 1000px)" srcset="assets/banners/aboutmebanner.png">
+            <img src="assets/banners/aboutmebanner2.png" alt="Banner Small" />
+        </picture>
+
+    </div>
+    
     <!-- this is the start of page content -->
 
-    <section class="about-me-page">
-        <div id="homepage-header">
-            <div class="homepage-header-icon-wrapper">
-                <img id="homepage-icon" src="assets/logos/strawberryicon.png" alt="Strawberry icon">
-            </div>
-            <div id="homepage-header-navigation" class="nav-section">
-                <a href="#">home</a>
-                <a href="#">about me</a>
-                <a href="#">projects</a>
-                <a href="#">cool stuff</a>
-            </div>
-        </div>
+    <section class="body_container">
         <div class="container">
             <div class="profilepic">
                 <img id="me" src="assets/profile.jpg" alt="Picture of Me">
@@ -62,7 +62,50 @@
             </section>
         </div>
     </section>
+    
+    <!-- this is the start of nav bar-->
+    <div id="hiddennavbar">
+        <a href="#" class="menubars" onclick="showMenu()"> 
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html">
+            <img src="assets/logos/strawbearilogoL.png" class="logo" alt="Lemon Logo">
+            <img src="assets/logos/lemonicon.png" class="mobileLogo" alt="Lemon Icon">  
+        </a>
+    </div>
 
+    <nav id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="#" class="menubarshidden" id="hide-menu" onclick="hideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="nav-section">
+                <a href="index.html"><i class="fa-solid fa-house nav-icon"></i>home</a>
+                <a href="aboutme.html"><i class="fa-solid fa-user disabled nav-icon"></i>about me</a>
+                <a href="projects.html"><i class="fa-solid fa-gears nav-icon"></i>projects</a>
+                <a href="#"><i class="fa-solid fa-star nav-icon"></i>cool stuff</a>
+            </div>
+            <div class="navstrawbeari">
+                <img src="assets/strawbeari_.png" alt="Strawberry Animated Nav Bar">
+            </div>
+        </ul>
+    </nav>
+
+    <!-- this is the start of footer -->
+
+    <div class="footer" style="background-color: #FFFAE0;">
+        <div class="top">strawbeari <span>&#9829;</span> 2022</div>
+        <div class="bottom">
+            <a href="mailto:allisonlychu@gmail.com" target="_blank"><img src="assets/icons/mailbrown.png"></a>
+            <a href="https://github.com/allisonchuu" target="_blank"><img src="assets/icons/githubbrown.png"></a>
+            <a href="https://www.instagram.com/allison.chuu/?hl=en" target="_blank"><img
+                    src="assets/icons/instagrambrown.png"></a>
+            <a href="https://www.linkedin.com/in/ucrallisonchu/" target="_blank"><img
+                    src="assets/icons/linkedinbrown.png"></a>
+        </div>
+    <div>
 </body>
 
 </html>
